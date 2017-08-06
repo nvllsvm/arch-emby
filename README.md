@@ -5,10 +5,11 @@
 **Description**
 
 Emby Server is a home media server built on top of other popular open source technologies such as Service Stack, jQuery, jQuery mobile, and Mono.
+This is the Emby Server patched to unlock Emby Premiere features.
 
 **Build notes**
 
-Latest stable Emby release from Arch Linux repo.
+Latest [emby-server-unlocked](https://aur.archlinux.org/packages/emby-server-unlocked/) from the Arch Linux AUR.
 
 **Usage**
 ```
@@ -21,12 +22,12 @@ docker run -d \
     -e UMASK=<umask for created files> \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
-    binhex/arch-emby
+    nvllsvm/emby-unlocked
 ```
 
 Please replace all user variables in the above command defined by <> with the correct values.
 
-**Access application**<br>
+**Access application**
 
 `<host ip>:8096`
 
@@ -41,19 +42,13 @@ docker run -d \
     -e UMASK=000 \
     -e PUID=0 \
     -e PGID=0 \
-    binhex/arch-emby
+    nvllsvm/emby-unlocked
 ```
 
-**Notes**<br>
+**Notes**
 
 User ID (PUID) and Group ID (PGID) can be found by issuing the following command for the user you want to run the container as:-
 
 ```
 id <username>
 ```
-___
-If you appreciate my work, then please consider buying me a beer  :D
-
-[![PayPal donation](https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MM5E27UX6AUU4)
-
-[Support forum](http://lime-technology.com/forum/index.php?topic=46382.0)
