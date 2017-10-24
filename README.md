@@ -35,7 +35,7 @@ Please replace all user variables in the above command defined by <> with the co
 ```
 docker run -d \
     -p 8096:8096 \
-    --name=<container name> \
+    --name=emby-server \
     -v /media/movies:/media \
     -v /apps/docker/emby/config:/config \
     -v /etc/localtime:/etc/localtime:ro \
