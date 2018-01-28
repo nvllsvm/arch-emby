@@ -1,6 +1,6 @@
 **Application**
 
-[Emby](https://emby.media/)
+[emby-unlocked](https://github.com/nvllsvm/emby-unlocked)
 
 **Description**
 
